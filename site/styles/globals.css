@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+
+:root {
+  --accent: 255 215 0;
+  --navy: 11 18 32;
+  --charcoal: 18 20 23;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply transition-colors duration-300 bg-white dark:bg-gradient-to-b dark:from-navy dark:to-charcoal text-gray-900 dark:text-white;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: 'Poppins', sans-serif;
+}
+
+.glass {
+  @apply bg-white/80 dark:bg-white/10 backdrop-blur-md border border-gray-200 dark:border-white/20 shadow-sm;
+}
+
+.glass-card {
+  @apply bg-white/90 dark:bg-white/10 backdrop-blur-md border border-gray-200 dark:border-white/20 hover:bg-white dark:hover:bg-white/20 hover:shadow-lg transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-accent text-navy px-6 py-3 rounded-xl font-bold hover:-translate-y-1 transition-all active:scale-95;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 25px rgba(255, 215, 0, 0.6);
+}
+
+.btn-secondary {
+  @apply bg-gray-100 dark:bg-white/10 text-gray-900 dark:text-white backdrop-blur-sm border border-gray-300 dark:border-white/20 px-6 py-3 rounded-xl font-bold hover:bg-gray-200 dark:hover:bg-white/20 transition-all;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-600 dark:from-yellow-400 dark:to-yellow-600;
+}
+
+.section-padding {
+  @apply py-20 px-6 lg:px-12;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500 dark:bg-gray-600;
+}
+
+@media (prefers-color-scheme: light) {
+  .glass {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .glass-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+}
+
+input,
+textarea,
+select {
+  @apply bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  @apply border-accent ring-2 ring-accent/20;
+}
