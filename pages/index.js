@@ -13,12 +13,12 @@ import { Car, Bike, Truck, Battery, Fuel, RotateCcw } from 'lucide-react'
 
 export default function Home() {
   const services = [
-    { t: 'Car Towing', d: 'Fast local towing for all sedan & SUV models.', icons: Car },
-    { t: 'Bike Towing', d: 'Secure motorcycle transport with specialized rigs.', icons: Bike },
-    { t: 'Flatbed Recovery', d: 'Heavy & delicate vehicle transport for long distances.', icons: Truck },
-    { t: 'Battery Jump-Start', d: 'Professional on-site battery assistance within 15 min.', icons: Battery },
-    { t: 'Emergency Fuel', d: 'Running low? We deliver fuel to your exact location.', icons: Fuel },
-    { t: 'Accident Recovery', d: 'Safe winch and recovery services for accident sites.', icons: RotateCcw }
+    { t: 'Car Towing', d: 'Quick local towing for all sedan and SUV models.', icons: Car },
+    { t: 'Bike Towing', d: 'Safe motorcycle transport using specialized towing rigs.', icons: Bike },
+    { t: 'Flatbed Recovery', d: 'Secure flatbed transport for luxury, damaged, or long-distance vehicles.', icons: Truck },
+    { t: 'Battery Jump-Start', d: 'On-site professional battery assistance within 15 minutes.', icons: Battery },
+    { t: 'Emergency Fuel Delivery', d: 'Out of fuel? We deliver petrol or diesel directly to your location.', icons: Fuel },
+    { t: 'Accident Recovery', d: 'Safe winch and recovery services for accident-damaged vehicles.', icons: RotateCcw }
   ]
 
   return (

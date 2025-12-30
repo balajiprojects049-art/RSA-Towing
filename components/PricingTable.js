@@ -28,7 +28,7 @@ export function PricingTable() {
     <section className="py-20">
       <div className="text-center mb-16">
         <h3 className="text-4xl font-display font-black tracking-tight mb-4">Transparent <span className="text-gradient">Pricing</span></h3>
-        <p className="text-gray-500 max-w-lg mx-auto">No hidden fees. Just honest pricing based on your vehicle type and distance.</p>
+        <p className="text-gray-500 max-w-lg mx-auto">Honest rates with no surprises, pay only for your vehicle type and distance.</p>
       </div>
 
       <div className="grid md:grid-cols-3 gap-8">

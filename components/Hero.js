@@ -38,7 +38,7 @@ export function Hero() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="mt-8 text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl"
           >
-            Emergency roadside assistance within minutes. Premium, safe, and reliable vehicle recovery for any situation.
+            Fast, safe, and reliable roadside assistance anytime, anywhere. Get back on the road within minutes.
           </motion.p>
 
           <motion.div

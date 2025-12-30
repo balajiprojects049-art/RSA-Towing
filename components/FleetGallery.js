@@ -20,7 +20,7 @@ export function FleetGallery() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
         <div>
           <h3 className="text-4xl font-display font-black tracking-tight mb-4">Modern <span className="text-gradient">Fleet</span></h3>
-          <p className="text-gray-500 max-w-lg">We use the latest recovery technology and certified equipment to ensure damage-free towing every single time.</p>
+          <p className="text-gray-500 max-w-lg">Equipped with cutting-edge technology and certified gear for damage-free towing, every time.</p>
         </div>
         <div className="flex items-center gap-2 bg-green-500/10 text-green-500 px-4 py-2 rounded-full text-sm font-bold border border-green-500/20">
           <Shield size={18} />

@@ -5,17 +5,17 @@ export function HowItWorks() {
   const steps = [
     {
       t: 'Request Service',
-      d: 'Call our 24/7 hotline or fill out the emergency request form with your location.',
+      d: 'Call our 24/7 hotline or submit an emergency request form with your location.',
       icon: PhoneCall
     },
     {
-      t: 'Get Live Tracking',
-      d: 'Receive a link to track the nearest recovery crew in real-time as they approach.',
+      t: 'Live Tracking',
+      d: 'Get a real-time tracking link to follow the nearest recovery crew as they make their way to you.',
       icon: MapPin
     },
     {
       t: 'Vehicle Safely Towed',
-      d: 'Our certified crew ensures your vehicle is secured and transported following strict safety protocols.',
+      d: 'Our certified team secures and transports your vehicle, following strict safety protocols.',
       icon: Truck
     }
   ]
@@ -24,7 +24,7 @@ export function HowItWorks() {
     <section className="py-12 relative">
       <div className="text-center mb-16">
         <h3 className="text-4xl font-display font-black tracking-tight mb-4">How It <span className="text-gradient">Works</span></h3>
-        <p className="text-gray-500 max-w-lg mx-auto">Getting rescued is simple. Just three steps and we'll have you back on your way or your vehicle safely recovered.</p>
+        <p className="text-gray-500 max-w-lg mx-auto">Stuck on the road? Follow three quick steps and our team will take care of the rest.</p>
       </div>
 
       <div className="grid md:grid-cols-3 gap-12 relative">
