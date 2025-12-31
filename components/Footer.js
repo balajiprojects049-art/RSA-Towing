@@ -14,7 +14,7 @@ export function Footer() {
               <span className="font-display font-black text-xl tracking-tight">RSA <span className="text-accent">Towing</span></span>
             </Link>
             <p className="text-sm text-gray-500 leading-relaxed mb-6">
-              The nation's most trusted 24/7 premium towing and roadside assistance service. Fast, safe, and reliable.
+              India’s most trusted premium 24/7 towing and roadside assistance provider—delivering fast, safe, and dependable service whenever you need it.
             </p>
             <div className="flex gap-4">
               <a href="#" className="p-2 glass-card rounded-lg text-gray-400 hover:text-accent transition-colors"><Instagram size={18} /></a>

@@ -159,7 +159,7 @@ export default function Services() {
             transition={{ delay: 0.2 }}
             className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl mx-auto"
           >
-            Professional roadside assistance and vehicle recovery services available 24/7 across all major Indian cities. Fast response, certified crews, and damage-free guarantee.
+            Comprehensive roadside assistance and vehicle recovery available around the clock, across major Indian cities. Prompt response, certified operators, and a guaranteed damage-free service.
           </motion.p>
 
           {/* Quick Stats */}
@@ -287,7 +287,7 @@ export default function Services() {
       <section className="py-20 bg-accent/5 -mx-6 lg:-mx-12 px-6 lg:px-12 rounded-[3rem]">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-display font-black mb-4">Why Choose <span className="text-gradient">RSA Towing</span></h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">Industry-leading service standards with a focus on safety, speed, and customer satisfaction.</p>
+          <p className="text-gray-500 max-w-2xl mx-auto">Trusted for safe, fast, and reliable roadside assistance, backed by certified crews and proven service standards.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -295,33 +295,33 @@ export default function Services() {
             <div className="w-20 h-20 bg-accent/10 text-accent rounded-full flex items-center justify-center mx-auto mb-6">
               <Shield size={40} />
             </div>
-            <h3 className="text-xl font-bold mb-3">Certified & Insured</h3>
-            <p className="text-sm text-gray-500 leading-relaxed">All operators are DOT-certified with comprehensive liability and cargo insurance coverage.</p>
+            <h3 className="text-xl font-bold mb-3">Fully Licensed & Insured</h3>
+            <p className="text-sm text-gray-500 leading-relaxed">All recovery professionals are formally certified and protected by comprehensive liability and cargo insurance.</p>
           </div>
 
           <div className="text-center">
             <div className="w-20 h-20 bg-accent/10 text-accent rounded-full flex items-center justify-center mx-auto mb-6">
               <Clock size={40} />
             </div>
-            <h3 className="text-xl font-bold mb-3">Lightning Fast Response</h3>
-            <p className="text-sm text-gray-500 leading-relaxed">GPS-optimized dispatch ensures the nearest crew reaches you in under 15 minutes on average.</p>
+            <h3 className="text-xl font-bold mb-3">Rapid Response Network</h3>
+            <p className="text-sm text-gray-500 leading-relaxed">Advanced GPS-based dispatch assigns the nearest crew, delivering assistance in under 15 minutes on average.</p>
           </div>
 
           <div className="text-center">
             <div className="w-20 h-20 bg-accent/10 text-accent rounded-full flex items-center justify-center mx-auto mb-6">
               <Car size={40} />
             </div>
-            <h3 className="text-xl font-bold mb-3">Live GPS Tracking</h3>
-            <p className="text-sm text-gray-500 leading-relaxed">Track your rescue vehicle in real-time with SMS updates and precise ETA notifications.</p>
+            <h3 className="text-xl font-bold mb-3">Real-Time Location Visibility</h3>
+            <p className="text-sm text-gray-500 leading-relaxed">Follow your recovery vehicle live with instant SMS alerts and accurate arrival updates.</p>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-20 text-center">
-        <h2 className="text-4xl font-display font-black mb-6">Need Emergency Assistance?</h2>
+        <h2 className="text-4xl font-display font-black mb-6">Require Immediate Assistance?</h2>
         <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-          Our 24/7 dispatch center is ready to help. Call now or request service online.
+          Our round-the-clock dispatch team is fully equipped to respond promptly. Contact us by phone or submit an online request for instant roadside support.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <a href="tel:+919512291229" className="btn-primary flex items-center gap-3 text-lg">

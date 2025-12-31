@@ -8,7 +8,7 @@ export default function Contact() {
       <PageHero
         badge="Get In Touch"
         title={<>Contact <span className="text-gradient">RSA Towing</span></>}
-        description="Available 24/7 for emergency roadside assistance. Reach out via call, WhatsApp, or email."
+        description="Our team is available round-the-clock for emergency roadside support. Reach us via phone, WhatsApp, or email for immediate assistance."
 
       />
 
@@ -172,11 +172,10 @@ export default function Contact() {
             {/* Information */}
             <div className="order-1 md:order-2">
               <h2 className="text-4xl font-display font-black mb-6">
-                Always Ready to <span className="text-gradient">Help You</span>
+                Always Ready to <span className="text-gradient">Assist</span>
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                Our state-of-the-art dispatch center operates 24/7/365, ensuring you're never alone on the road.
-                With GPS-enabled tracking and professional operators, help is always just a call away.
+                Our state-of-the-art dispatch center operates around the clock, every day of the year, so you’re never left stranded. With GPS-enabled tracking and certified operators, help is just a call or click away.
               </p>
 
               <div className="space-y-4">
@@ -186,7 +185,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold mb-1">Instant Response</h3>
-                    <p className="text-sm text-gray-500">Average response time of 12 minutes in major cities</p>
+                    <p className="text-sm text-gray-500">Rapid assistance with an average response time of just 12 minutes in major cities.</p>
                   </div>
                 </div>
 
@@ -196,7 +195,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold mb-1">Live GPS Tracking</h3>
-                    <p className="text-sm text-gray-500">Track your rescue vehicle in real-time with SMS updates</p>
+                    <p className="text-sm text-gray-500">Track your rescue vehicle in real-time with SMS alerts and accurate ETAs.</p>
                   </div>
                 </div>
 
@@ -205,8 +204,8 @@ export default function Contact() {
                     <Clock size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold mb-1">24/7 Availability</h3>
-                    <p className="text-sm text-gray-500">No matter when you need us, we're always here</p>
+                    <h3 className="font-bold mb-1">Continuous Availability</h3>
+                    <p className="text-sm text-gray-500">Day or night, our team is always on standby to provide prompt roadside support.</p>
                   </div>
                 </div>
               </div>
