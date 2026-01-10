@@ -52,7 +52,7 @@ export function Testimonials() {
         ))}
       </div>
 
-      <div className="mt-16 flex items-center justify-center gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+      <div className="mt-16 flex flex-wrap items-center justify-center gap-6 md:gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
         {/* Placeholder for Trust Badges */}
         <div className="font-display font-black text-2xl tracking-tighter">Google <span className="text-accent">4.9★</span></div>
         <div className="font-display font-black text-2xl tracking-tighter">TRUSTPILOT</div>

@@ -6,10 +6,9 @@ export default function Fleet() {
   return (
     <div>
       <PageHero
-        badge="Our Fleet"
-        title={<><span className="text-gradient">Modern Equipment</span> & Professional Team</>}
-        description="State-of-the-art towing vehicles and certified recovery specialists ready to serve you 24/7 across Pan India."
-
+        title="Our Premium Fleet"
+        subtitle="State-of-the-art towing vehicles and certified recovery specialists ready to serve you 24/7 across Pan India."
+        image="/images/fleet-hero-gen.png"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16">

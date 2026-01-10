@@ -9,20 +9,23 @@ import { EmergencyButton } from '../components/EmergencyButton'
 import { QuoteCalculator } from '../components/QuoteCalculator'
 import { WhatsAppButton } from '../components/WhatsAppButton'
 import { FAQ } from '../components/FAQ'
-import { Car, Bike, Truck, Battery, Fuel, RotateCcw } from 'lucide-react'
+import { Car, Bike, Truck, Battery, Fuel, Wrench, Key, Disc, Bus } from 'lucide-react'
 
 export default function Home() {
   const services = [
-    { t: 'Car Towing', d: 'Quick local towing for all sedan and SUV models.', icons: Car },
-    { t: 'Bike Towing', d: 'Safe motorcycle transport using specialized towing rigs.', icons: Bike },
-    { t: 'Flatbed Recovery', d: 'Secure flatbed transport for luxury, damaged, or long-distance vehicles.', icons: Truck },
-    { t: 'Battery Jump-Start', d: 'On-site professional battery assistance within 15 minutes.', icons: Battery },
-    { t: 'Emergency Fuel Delivery', d: 'Out of fuel? We deliver petrol or diesel directly to your location.', icons: Fuel },
-    { t: 'Accident Recovery', d: 'Safe winch and recovery services for accident-damaged vehicles.', icons: RotateCcw }
+    { t: 'Car Towing', d: 'Quick local towing for all sedan and SUV models.', p: 'From ₹2,999', icons: Car },
+    { t: 'Bike Towing', d: 'Safe motorcycle transport using specialized towing rigs.', p: 'From ₹1,999', icons: Bike },
+    { t: 'Commercial Towing', d: 'Towing for delivery vans, buses, and commercial fleets.', p: 'Custom Quote', icons: Bus },
+    { t: 'Heavy Vehicle Towing', d: 'Heavy-duty recovery for trucks and construction equipment.', p: 'Custom Quote', icons: Truck },
+    { t: 'Battery Jumpstart', d: 'On-site professional battery boost to get you moving.', p: 'From ₹1,499', icons: Battery },
+    { t: 'Minor Repairs', d: 'Quick fixes for common mechanical issues on the spot.', p: 'From ₹999', icons: Wrench },
+    { t: 'Puncture & Flat Tire', d: 'Tire change or puncture repair service at your location.', p: 'From ₹799', icons: Disc },
+    { t: 'Emergency Fuel', d: 'Petrol or diesel delivery when you run dry.', p: 'From ₹999 + Fuel', icons: Fuel },
+    { t: 'Key Recovery', d: 'Car lockout assistance and lost key retrieval services.', p: 'From ₹1,499', icons: Key }
   ]
 
   return (
-    <div className="flex flex-col gap-24 overflow-hidden">
+    <div className="flex flex-col gap-8 overflow-hidden">
       <Hero />
 
       <section id="services" className="relative">
@@ -31,8 +34,8 @@ export default function Home() {
           <h2 className="text-sm font-bold text-accent uppercase tracking-widest mb-3">Professional Solutions</h2>
           <h3 className="text-4xl md:text-5xl font-display font-black tracking-tight">Our Premium <span className="text-gradient">Services</span></h3>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {services.map((s, i) => <ServiceCard key={i} title={s.t} desc={s.d} icon={s.icons} />)}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+          {services.map((s, i) => <ServiceCard key={i} title={s.t} desc={s.d} price={s.p} icon={s.icons} />)}
         </div>
       </section>
 
@@ -44,7 +47,7 @@ export default function Home() {
       <MapCoverage />
       <FAQ />
 
-      <EmergencyButton />
+
       <WhatsAppButton />
     </div>
   )

@@ -1,9 +1,10 @@
+import { WhatsAppButton } from '../components/WhatsAppButton'
 import '../styles/globals.css'
 import Head from 'next/head'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 
-export default function App({ Component, pageProps }){
+export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }){
           <Component {...pageProps} />
         </main>
         <Footer />
+        <WhatsAppButton />
       </div>
     </>
   )

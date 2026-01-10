@@ -6,10 +6,9 @@ export default function TestimonialsPage() {
   return (
     <div>
       <PageHero
-        badge="Customer Reviews"
-        title={<>What Our <span className="text-gradient">Customers Say</span></>}
-        description="Real stories from real customers. Read how we've helped thousands of drivers get back on the road safely."
-
+        title="What Our Customers Say"
+        subtitle="Real stories from real customers. Read how we've helped thousands of drivers get back on the road safely."
+        image="/images/testimonials-hero-gen.png"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16">

@@ -6,10 +6,9 @@ export default function Pricing() {
   return (
     <div>
       <PageHero
-        badge="Transparent Pricing"
-        title={<>Fair & <span className="text-gradient">Honest Rates</span></>}
-        description="No hidden charges. Clear, upfront pricing for all our towing and roadside assistance services across India."
-
+        title="Fair & Honest Rates"
+        subtitle="No hidden charges. Clear, upfront pricing for all our towing and roadside assistance services across India."
+        image="/images/pricing-hero-gen.png"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16">

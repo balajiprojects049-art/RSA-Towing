@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export function Header() {
-  const [dark, setDark] = useState(false)
+  const [dark, setDark] = useState(true)
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -21,8 +21,6 @@ export function Header() {
 
   const navLinks = [
     { name: 'Services', href: '/services' },
-    { name: 'Fleet', href: '/fleet' },
-    { name: 'Pricing', href: '/pricing' },
     { name: 'Contact', href: '/contact' },
   ]
 

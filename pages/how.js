@@ -6,10 +6,9 @@ export default function HowPage() {
   return (
     <div>
       <PageHero
-        badge="Our Process"
-        title={<>How <span className="text-gradient">RSA Towing</span> Works</>}
-        description="Getting roadside assistance is simple and fast. Just three easy steps to get back on the road safely."
-
+        title="How RSA Towing Works"
+        subtitle="Getting roadside assistance is simple and fast. Just three easy steps to get back on the road safely."
+        image="/images/how-hero-gen.png"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16">

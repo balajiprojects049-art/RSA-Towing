@@ -99,8 +99,8 @@ export function Hero() {
               <Clock size={24} />
             </div>
             <div>
-              <div className="font-bold">Lightning Fast</div>
-              <div className="text-xs text-gray-500">Nearest crew dispatched instantly to your GPS coordinates.</div>
+              <div className="font-bold text-gray-900 dark:text-white">Lightning Fast</div>
+              <div className="text-xs text-gray-600 dark:text-gray-300">Nearest crew dispatched instantly to your GPS coordinates.</div>
             </div>
           </div>
 
@@ -109,8 +109,8 @@ export function Hero() {
               <MapPin size={24} />
             </div>
             <div>
-              <div className="font-bold">Real-time Tracking</div>
-              <div className="text-xs text-gray-500">Live map view of our rescue vehicle arriving.</div>
+              <div className="font-bold text-gray-900 dark:text-white">Real-time Tracking</div>
+              <div className="text-xs text-gray-600 dark:text-gray-300">Live map view of our rescue vehicle arriving.</div>
             </div>
           </div>
         </motion.div>

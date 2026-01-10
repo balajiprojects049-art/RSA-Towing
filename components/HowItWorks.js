@@ -43,9 +43,7 @@ export function HowItWorks() {
             <div className="w-20 h-20 bg-white dark:bg-gray-900 border-2 border-accent rounded-full flex items-center justify-center text-accent mb-6 shadow-xl group-hover:scale-110 transition-transform">
               <s.icon size={32} />
             </div>
-            <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-accent text-white font-bold flex items-center justify-center text-sm">
-              {i + 1}
-            </div>
+
             <h4 className="text-xl font-display font-bold mb-3">{s.t}</h4>
             <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed max-w-[250px]">{s.d}</p>
           </motion.div>

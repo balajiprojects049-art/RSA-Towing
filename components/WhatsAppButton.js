@@ -1,38 +1,32 @@
 import { motion } from 'framer-motion'
 
 export function WhatsAppButton() {
-    const phoneNumber = '919512291229' // WhatsApp number (without + and spaces)
-    const message = 'Hello! I need roadside assistance. Can you help me?'
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
-
     return (
         <motion.a
-            href={whatsappUrl}
+            href="https://wa.me/919512291229"
             target="_blank"
             rel="noopener noreferrer"
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="fixed left-6 bottom-6 w-16 h-16 bg-[#25D366] text-white rounded-full shadow-[0_10px_40px_rgba(37,211,102,0.5)] z-50 flex items-center justify-center group"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] rounded-full shadow-xl flex items-center justify-center hover:scale-110 hover:shadow-2xl transition-all duration-300"
+            aria-label="Chat on WhatsApp"
         >
-            <div className="absolute inset-0 bg-[#25D366] rounded-full animate-ping opacity-20 group-hover:opacity-40" />
-
-            {/* Official WhatsApp Icon SVG */}
+            {/* Official WhatsApp SVG Icon */}
             <svg
-                className="relative z-10"
+                viewBox="0 0 24 24"
                 width="32"
                 height="32"
-                viewBox="0 0 32 32"
-                fill="currentColor"
+                className="fill-white"
                 xmlns="http://www.w3.org/2000/svg"
             >
-                <path d="M27.281 4.65C24.326 1.648 20.422 0 16.265 0h-.028C7.292 0 0 7.293 0 16.262a16.215 16.215 0 002.207 8.176L0 32l7.75-2.031a16.217 16.217 0 007.75 1.973h.007c8.97 0 16.262-7.293 16.262-16.262 0-4.348-1.688-8.436-4.754-11.512zM16.237 29.75a13.483 13.483 0 01-6.86-1.875l-.492-.293-5.11 1.34 1.364-4.984-.32-.508a13.464 13.464 0 01-2.067-7.168C2.75 8.72 8.971 2.5 16.515 2.5c3.664 0 7.106 1.43 9.692 4.023a13.614 13.614 0 014.008 9.707c-.004 7.543-6.226 13.77-13.77 13.77zm7.562-10.32c-.414-.207-2.45-1.21-2.828-1.348-.379-.137-.653-.207-.93.207-.276.414-1.07 1.348-1.313 1.625-.242.277-.484.312-.898.105-.414-.207-1.746-.645-3.328-2.055-1.23-1.098-2.063-2.453-2.305-2.867-.242-.414-.028-.64.18-.847.188-.184.414-.481.621-.726.207-.242.277-.414.414-.691.137-.277.07-.52-.035-.727-.105-.207-.93-2.242-1.274-3.07-.336-.805-.676-.696-.93-.711-.242-.012-.52-.015-.798-.015-.277 0-.726.105-1.105.52-.379.414-1.446 1.414-1.446 3.449s1.48 4.004 1.687 4.28c.207.277 2.918 4.454 7.07 6.246.988.426 1.757.68 2.356.868.992.316 1.895.27 2.61.164.797-.118 2.45-.996 2.797-1.96.347-.965.347-1.797.242-1.97-.105-.175-.383-.277-.797-.485z" />
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
             </svg>
-
-            <div className="absolute left-full ml-4 bg-navy text-white px-3 py-1 rounded-lg text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-xl">
-                CHAT ON WHATSAPP
-            </div>
+            {/* Tooltip */}
+            <span className="absolute right-full mr-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white px-4 py-2 rounded-xl text-sm font-bold shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Chat with us!
+            </span>
+            {/* Pulse effect */}
+            <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-75 -z-10" />
         </motion.a>
     )
 }

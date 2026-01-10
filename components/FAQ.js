@@ -49,8 +49,8 @@ export function FAQ() {
     ]
 
     return (
-        <section className="py-20">
-            <div className="text-center mb-16">
+        <section className="py-10">
+            <div className="text-center mb-10">
                 <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider mb-4">
                     <HelpCircle size={18} />
                     Got Questions?
@@ -61,7 +61,7 @@ export function FAQ() {
                 </p>
             </div>
 
-            <div className="max-w-3xl mx-auto space-y-4">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
                 {faqs.map((faq, index) => (
                     <motion.div
                         key={index}
@@ -69,19 +69,19 @@ export function FAQ() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.05 }}
-                        className="glass-card rounded-2xl overflow-hidden border border-white/10"
+                        className="glass-card rounded-2xl overflow-hidden border border-white/10 h-fit"
                     >
                         <button
                             onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                            className="w-full px-6 md:px-8 py-6 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
+                            className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
                         >
-                            <span className="font-bold text-lg pr-4">{faq.q}</span>
+                            <span className="font-bold text-base pr-4">{faq.q}</span>
                             <motion.div
                                 animate={{ rotate: openIndex === index ? 180 : 0 }}
                                 transition={{ duration: 0.3 }}
                                 className="flex-shrink-0"
                             >
-                                <ChevronDown size={24} className="text-accent" />
+                                <ChevronDown size={20} className="text-accent" />
                             </motion.div>
                         </button>
 
@@ -94,7 +94,7 @@ export function FAQ() {
                                     transition={{ duration: 0.3 }}
                                     className="overflow-hidden"
                                 >
-                                    <div className="px-6 md:px-8 pb-6 text-gray-600 dark:text-gray-400 leading-relaxed">
+                                    <div className="px-6 pb-5 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                                         {faq.a}
                                     </div>
                                 </motion.div>
@@ -104,7 +104,7 @@ export function FAQ() {
                 ))}
             </div>
 
-            <div className="mt-12 text-center">
+            <div className="mt-6 text-center">
                 <p className="text-gray-500 mb-4">Still have questions?</p>
                 <div className="flex flex-wrap gap-4 justify-center">
                     <a href="tel:+919512291229" className="btn-primary">
