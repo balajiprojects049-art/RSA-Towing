@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Instagram, Twitter, Facebook, Car } from 'lucide-react'
+import { Phone, Mail, MapPin, Instagram, Twitter, Facebook } from 'lucide-react'
 import Link from 'next/link'
 
 export function Footer() {
@@ -7,11 +7,14 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-6 group">
-              <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center text-white">
-                <Car size={20} />
+            <Link href="/" className="inline-block mb-6 group">
+              <div className="relative h-14 w-40 group-hover:scale-105 transition-transform duration-300">
+                <img
+                  src="/images/rsa-towing-logo.png"
+                  alt="RSA Towing"
+                  className="w-full h-full object-contain"
+                />
               </div>
-              <span className="font-display font-black text-xl tracking-tight">RSA <span className="text-accent">Towing</span></span>
             </Link>
             <p className="text-sm text-gray-500 leading-relaxed mb-6">
               India’s most trusted premium 24/7 towing and roadside assistance provider—delivering fast, safe, and dependable service whenever you need it.

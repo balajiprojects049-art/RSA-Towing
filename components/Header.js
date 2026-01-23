@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Sun, Moon, Phone, Menu, X, Car } from 'lucide-react'
+import { Sun, Moon, Phone, Menu, X } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -27,13 +27,13 @@ export function Header() {
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'py-3 glass shadow-lg' : 'py-5 bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
-            <Car size={24} />
-          </div>
-          <div className="leading-tight">
-            <div className="font-display font-extrabold text-xl tracking-tight">RSA <span className="text-accent">Towing</span></div>
-            <div className="text-[10px] uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400 font-bold">24/7 Premium Rescue</div>
+        <Link href="/" className="flex items-center group">
+          <div className="relative h-20 w-60 md:h-24 md:w-72 group-hover:scale-105 transition-transform duration-300">
+            <img
+              src="/images/rsa-towing-logo.png"
+              alt="RSA Towing - 24/7 Premium Rescue"
+              className="w-full h-full object-contain"
+            />
           </div>
         </Link>
 
